@@ -1,0 +1,119 @@
+body,html,div,p,ul,li,ol,dl,dt,dd,img,a,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+ul,li,dl,dt,dd{list-style: none;}
+a{text-decoration: none;outline: none;}
+a:hover,a:focus{text-decoration: none;outline: none;border:none;}
+a:visited {text-decoration: none;}
+img{border:0;}
+body,html{font-family: "SingleMaltaRegular Regular","微软雅黑";background: #fff;}
+input,textarea{font-family: "SingleMaltaRegular Regular","微软雅黑";font-size: 14px;color: #666}
+input:focus, input:active:focus{outline: none}
+i,em{font-style: normal}
+
+/*common*/
+.pullLeft{float: left;}
+.pullRight{float: right;}
+.conWrap{width: 1150px;margin: 0 auto;}
+
+/*header*/
+.header{position: relative;width: 100%;height: 54px;padding: 15px 0 20px;background: #fff;}
+.header .con{width: 1150px;margin: 0 auto;}
+.header .logo{float: left;}
+.header .logo .position{display: inline-block;height: 50px;border-left: 2px solid #dcdcdc;margin-left: 21px;padding-left: 12px;font-size: 15px;
+  text-align: center;}
+.header .logo .position .name{color: #000000;margin-bottom: 5px;display: inline-block;padding-top: 5px;}
+.header .logo .position .change a{color: #c9c9c9}
+
+.header .navCon .login{text-align: right;}
+.header .navCon .login a{color: #f4b649;font-size: 17px;margin-right: 10px;}
+.header .navCon .nav{margin-top: 5px;}
+.header .navCon .nav li{float: left;margin-left: 30px;position: relative;}
+.header .navCon .nav li a{display: inline-block;font-size: 17px;color: #282c35;padding: 5px 12px;}
+.header .navCon .nav li a:hover{background: #282c35;color: #fff}
+.header .navCon .nav li.active a{background: #282c35;color: #fff}
+.header .navCon .nav ul{background: #fff;position: absolute;left: 0;top: 33px;z-index: 9999;display: none;}
+.header .navCon .nav ul li{float: none;margin-left: 0px;border-top: 1px solid #8f9196}
+.header .navCon .nav li:hover ul{display: block;}
+
+/*bannner*/
+.banner{overflow: hidden;position: relative;background: #f4f4f4;border-top: 10px solid #000000;padding-bottom: 45px;}
+.bannerCon{width: 5000px;position: relative;left:0;top: 0;}
+.bannerCon li{overflow: hidden;float: left;}
+.bannerCon img{max-width:none;}
+
+.bannerListCon{width: 100%;position: absolute;bottom: 5%;left: 0px;z-index: 9999; }
+.bannerListDot{position: absolute;left:0;bottom: 50px;width: 100%;text-align: center;}
+.bannerListDot a{display: inline-block;width: 10px;height: 10px;border-radius: 50%;background: #fff;margin-right: 10px;}
+.bannerListDot a.listActive{background:  #f4b649;}
+.banner .tips{width: 100%;height: 50px;line-height: 50px;background: #000000;padding-left: 100px;position: absolute;left: 0;bottom: 0;color: #fff;}
+.banner .tips a{color: #fff;font-size: 15px;}
+.banner .tips .icon img{margin-top: 15px;float: left;margin-right: 5px;}
+.banner .tips .icon {font-size: 18px;}
+.banner .tips a{display: inline-block;margin-left: 25px;text-decoration: underline;}
+
+
+.designMaster{background: url(../img/masterBg.jpg) no-repeat center top;}
+.indexTit{text-align: center;padding: 22px 0;}
+.indexTit img{display: inline-block;}
+.moduleTit{text-align: center;background: url(../img/titBg.png) no-repeat center center;}
+.moduleTit a{display: inline-block;width: 106px;height: 32px;border:2px solid #7a7c82;line-height: 32px;font-size: 16px;
+	color: #282c35}
+.moduleTit a:hover{background: #282c35;color: #fff;border-color: #373b43}
+
+.designMaster .masterCon{width: 1150px;margin: 0 auto;overflow: hidden;margin-top: 20px;padding-bottom: 20px;}
+.designMaster .masterCon li{width: 360px;background: #fff;box-shadow: 0 0 5px #afb0b2;margin: 5px 25px 12px 5px;border-bottom: 4px solid transparent;
+	overflow: hidden;float: left;}
+.designMaster .masterCon li:hover{border-bottom: 4px solid #f4b649;}
+.designMaster .masterCon li:nth-of-type(3n){margin-right: 5px;}
+.designMaster .masterCon li:last-child{border:none;background: none;box-shadow: none;}
+.designMaster .masterCon .masterTop{padding: 5px;}
+.designMaster .masterCon .masterInfo{padding-left: 20px;overflow: hidden;background: url(../img/masterNameBg.png) no-repeat center top;}
+.designMaster .masterCon .nameLine .name{font-size: 25px;color: #000000;margin-right: 50px;}
+.designMaster .masterCon .nameLine a{display: inline-block;width: 76px;height: 22px;line-height: 22px;text-align: center;font-size: 14px;
+	color: #fff;border-radius: 3px;}
+.designMaster .masterCon .nameLine a.region{background: #333366}
+.designMaster .masterCon .nameLine a.international{background: #336666}
+.designMaster .masterCon .masterMsg{margin-top: 5px;font-size: 15px;}
+.designMaster .masterCon .masterMsg .left{margin-right: 80px;}
+.designMaster .masterCon .masterMsg .time{color: #5c6061;text-align: center;}
+.designMaster .masterCon .masterMsg .service{display: inline-block;width: 87px;height: 26px;background: #9b9fa0;color: #fff;
+	text-align: center;line-height: 26px;border-radius: 3px;margin-top: 6px;}
+.designMaster .masterCon .masterMsg .right{color: #5c6061;line-height: 20px;}
+
+
+.linkBar{height: 178px;background: #c9cccd}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
