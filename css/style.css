@@ -1,0 +1,336 @@
+/*stylecss 2016-06-13*/
+
+/*common*/
+body{background: #f4f4f4}
+.header{background: #282c35;box-shadow: 0 0 6px #454545}
+.header .logo .position .name{color: #c9c9c9}
+.header .navCon .nav ul li a{color: #282c35}
+.header .navCon .nav li a{color: #fff}
+.header .navCon .nav li.active a{background: #fff;color: #282c35}
+.header .navCon .nav li a:hover{background: #fff;color: #282c35}
+.header .navCon .nav li:hover a{background: #fff;color: #282c35}
+.header .navCon .nav ul li a:hover{background: #282c35 ;color: #fff}
+
+.designAds{margin-top: 8px;}
+
+/*designer设计大师*/
+.designColumn{background: none;}
+.designColumn .worksTit{clear: both;text-align: center;padding: 10px 0 5px 0;color: #1c1c1c;font-size: 14px;background: url(../img/workTitBg.png) no-repeat center center;}
+.designColumn .masterCon{margin-top: 10px;}
+.designColumn .masterCon .masterMsg li{background: none;box-shadow: none;margin: 0;text-align: center;}
+.designColumn .masterCon .masterMsg li a{color: #5c6061}
+.designColumn .masterCon .masterMsg .left{margin-right: 67px;}
+.designColumn .masterCon>ul>li{padding-bottom: 10px;}
+.designColumn .masterCon .masterMsg ul li:hover{border:none;}
+.designColumn .masterCon .masterMsg ul li{border:none;}
+.designColumn .masterCon .masterMsg{margin-top: 10px;}
+
+.designColumn .masterCon{background: #fff}
+.designColumn .masterCon li{margin: 15px 3px 5px 16px}
+.designColumn .masterCon>ul>li:last-child{background: #fff;border-bottom: 4px solid transparent ;box-shadow: 0 0 5px #afb0b2;}
+.designColumn .masterCon>ul>li:last-child:hover{border-color:#f4b649}
+
+.designFilter{width: 1150px;height: 50px;line-height: 50px;background: #fff;margin: 10px auto 0;}
+.designFilter .styled-select{height: 47px;width: 175px;border:none;border-right: 1px solid #f4f4f4;border-top: 3px solid #fff;
+	margin: 0;background: #fff url("../img/selectBg.png") no-repeat scroll 80% center;border-radius: 0}
+.designFilter .styled-select select{height: 47px;line-height: 47px;font-size: 16px;padding-left: 30px;width: 200px}
+.designFilter .styled-select:first-child{border-top: 3px solid #5c6061;}
+
+
+/*works 经典作品*/
+.designFilter a{display: inline-block;padding: 0 25px;border-right: 1px solid #f4f4f4;color: #6d6d6b;font-size: 16px;
+	border-top: 3px solid #fff;}
+.designFilter a.active{border-top: 3px solid #282c35}
+.worksCase .caseCon{background: #fff;margin-top: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

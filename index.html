@@ -9,6 +9,9 @@
 
   <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="js/banner.js"></script>
+  <script type="text/javascript" src="js/jquery.plugins.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
 
 </head>
 <body>
@@ -17,7 +20,7 @@
   <div class="header">
     <div class="con">
       <div class="logo pullLeft">
-        <img src="img/logo.png" alt="设计范" class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="设计范" class="logo"></a>
         <span class="position">
           <span class="name">武汉</span>
           <p class="change"><a href="#">切换城市</a></p>
@@ -137,7 +140,7 @@
       <ul>
         <li>
           <div class="masterTop">
-            <img src="img/designer1.jpg" alt="李凡浩">
+            <img data-original="img/designer1.jpg" alt="李凡浩"  class="masterLazy">
           </div>
           <div class="masterInfo">
             <p class="nameLine">
@@ -160,7 +163,7 @@
         </li>
         <li>
           <div class="masterTop">
-            <img src="img/designer2.jpg" alt="李凡浩">
+            <img data-original="img/designer2.jpg" alt="李凡浩" class="masterLazy">
           </div>
           <div class="masterInfo">
             <p class="nameLine">
@@ -183,7 +186,7 @@
         </li>
         <li>
           <div class="masterTop">
-            <img src="img/designer3.jpg" alt="李凡浩">
+            <img data-original="img/designer3.jpg" alt="李凡浩" class="masterLazy">
           </div>
           <div class="masterInfo">
             <p class="nameLine">
@@ -206,7 +209,7 @@
         </li>
         <li>
           <div class="masterTop">
-            <img src="img/designer4.jpg" alt="李凡浩">
+            <img data-original="img/designer4.jpg" alt="李凡浩" class="masterLazy">
           </div>
           <div class="masterInfo">
             <p class="nameLine">
@@ -229,7 +232,7 @@
         </li>
         <li>
           <div class="masterTop">
-            <img src="img/designer5.jpg" alt="李凡浩">
+            <img data-original="img/designer5.jpg" alt="李凡浩" class="masterLazy">
           </div>
           <div class="masterInfo">
             <p class="nameLine">
@@ -252,7 +255,7 @@
         </li>
         <li>
           <div class="masterTop">
-            <img src="img/designer6.jpg" alt="李凡浩">
+            <img data-original="img/designer6.jpg" alt="李凡浩" class="masterLazy">
           </div>
           <div class="masterInfo">
             <p class="nameLine">
@@ -275,7 +278,7 @@
         </li>
         <li>
           <div class="masterTop">
-            <img src="img/designer7.jpg" alt="李凡浩">
+            <img data-original="img/designer7.jpg" alt="李凡浩" class="masterLazy">
           </div>
           <div class="masterInfo">
             <p class="nameLine">
@@ -298,7 +301,7 @@
         </li>
         <li>
           <div class="masterTop">
-            <img src="img/designer8.jpg" alt="李凡浩">
+            <img data-original="img/designer8.jpg" alt="李凡浩" class="masterLazy">
           </div>
           <div class="masterInfo">
             <p class="nameLine">
@@ -329,10 +332,601 @@
 
   <div class="linkBar">
     <div class="conWrap">
-      
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/linkBarIcon1_1.png" alt="真正的大咖">
+            <h3>真正的大咖</h3>
+            <p>入驻平台的必须是行业大咖</p>
+          </a>
+        </li> 
+        <li>
+          <a href="#">
+            <img src="img/linkBarIcon2_2.png" alt="选择范围广">
+            <h3>选择范围广</h3>
+            <p>这么多大咖总有一款适合你</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/linkBarIcon3_3.png" alt="皇家式服务">
+            <h3>皇家式服务</h3>
+            <p>整个流程一对一皇家式服务</p>
+          </a>
+        </li> 
+        <li>
+          <a href="#">
+            <img src="img/linkBarIcon4_4.png" alt="监管和保证">
+            <h3>监管和保证</h3>
+            <p>签订三方合同保障您的权益</p>
+          </a>
+        </li> 
+      </ul>
     </div>
   </div>
 
+  <div class="caseShows">
+    <div class="indexTit">
+      <img src="img/moduleTit2.png" alt="经典作品">
+    </div>
+    <div class="moduleTit">
+      <a href="#">商业展示</a>
+      <a href="#">豪华别墅</a>
+      <a href="#">办公空间</a>
+      <a href="#">酒店餐饮</a>
+      <a href="#">休闲会所</a>
+    </div>
+    <div class="caseCon">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="casePicWrap"><img data-original="img/caseShow1.jpg" class="casePic" alt="闲庭雅趣"></span>
+            <div class="caseInfo">
+              <div class="pullLeft left">
+                <span class="headPic">
+                  <img src="img/designer1.jpg">
+                </span>
+                <p class="name">路明</p>
+                <p class="time">从业16年</p>
+              </div>
+              <div class="pullLeft right">
+                <h2>英山碧晗度假酒店</h2>
+                <p class="tag"><span>会所装修设计</span></p>
+                <p class="type">类别：酒店空间</p>
+                <p class="type">风格：现代简约</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="casePicWrap"><img data-original="img/caseShow2.jpg" class="casePic" alt="闲庭雅趣"></span>
+            <div class="caseInfo">
+              <div class="pullLeft left">
+                <span class="headPic">
+                  <img src="img/designer2.jpg">
+                </span>
+                <p class="name">路明</p>
+                <p class="time">从业16年</p>
+              </div>
+              <div class="pullLeft right">
+                <h2>英山碧晗度假酒店</h2>
+                <p class="tag"><span>会所装修设计</span></p>
+                <p class="type">类别：酒店空间</p>
+                <p class="type">风格：现代简约</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="casePicWrap"><img data-original="img/caseShow3.jpg" class="casePic" alt="闲庭雅趣"></span>
+            <div class="caseInfo">
+              <div class="pullLeft left">
+                <span class="headPic">
+                  <img src="img/designer3.jpg">
+                </span>
+                <p class="name">路明</p>
+                <p class="time">从业16年</p>
+              </div>
+              <div class="pullLeft right">
+                <h2>英山碧晗度假酒店</h2>
+                <p class="tag"><span>会所装修设计</span></p>
+                <p class="type">类别：酒店空间</p>
+                <p class="type">风格：现代简约</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="casePicWrap"><img data-original="img/caseShow4.jpg" class="casePic" alt="闲庭雅趣"></span>
+            <div class="caseInfo">
+              <div class="pullLeft left">
+                <span class="headPic">
+                  <img src="img/designer4.jpg">
+                </span>
+                <p class="name">路明</p>
+                <p class="time">从业16年</p>
+              </div>
+              <div class="pullLeft right">
+                <h2>英山碧晗度假酒店</h2>
+                <p class="tag"><span>会所装修设计</span></p>
+                <p class="type">类别：酒店空间</p>
+                <p class="type">风格：现代简约</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="casePicWrap"><img data-original="img/caseShow5.jpg" class="casePic" alt="闲庭雅趣"></span>
+            <div class="caseInfo">
+              <div class="pullLeft left">
+                <span class="headPic">
+                  <img src="img/designer5.jpg">
+                </span>
+                <p class="name">路明</p>
+                <p class="time">从业16年</p>
+              </div>
+              <div class="pullLeft right">
+                <h2>英山碧晗度假酒店</h2>
+                <p class="tag"><span>会所装修设计</span></p>
+                <p class="type">类别：酒店空间</p>
+                <p class="type">风格：现代简约</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="casePicWrap"><img data-original="img/caseShow6.jpg" class="casePic" alt="闲庭雅趣"></span>
+            <div class="caseInfo">
+              <div class="pullLeft left">
+                <span class="headPic">
+                  <img src="img/designer6.jpg">
+                </span>
+                <p class="name">路明</p>
+                <p class="time">从业16年</p>
+              </div>
+              <div class="pullLeft right">
+                <h2>英山碧晗度假酒店</h2>
+                <p class="tag"><span>会所装修设计</span></p>
+                <p class="type">类别：酒店空间</p>
+                <p class="type">风格：现代简约</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="casePicWrap"><img data-original="img/caseShow7.jpg" class="casePic" alt="闲庭雅趣"></span>
+            <div class="caseInfo">
+              <div class="pullLeft left">
+                <span class="headPic">
+                  <img src="img/designer7.jpg">
+                </span>
+                <p class="name">路明</p>
+                <p class="time">从业16年</p>
+              </div>
+              <div class="pullLeft right">
+                <h2>英山碧晗度假酒店</h2>
+                <p class="tag"><span>会所装修设计</span></p>
+                <p class="type">类别：酒店空间</p>
+                <p class="type">风格：现代简约</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="casePicWrap"><img data-original="img/caseShow8.jpg" class="casePic" alt="闲庭雅趣"></span>
+            <div class="caseInfo">
+              <div class="pullLeft left">
+                <span class="headPic">
+                  <img src="img/designer8.jpg">
+                </span>
+                <p class="name">路明</p>
+                <p class="time">从业16年</p>
+              </div>
+              <div class="pullLeft right">
+                <h2>英山碧晗度假酒店</h2>
+                <p class="tag"><span>会所装修设计</span></p>
+                <p class="type">类别：酒店空间</p>
+                <p class="type">风格：现代简约</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/caseShowLast.jpg" title="查看更多案例">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ads">
+    <a href="#" title="寻找真正的大咖"><img src="img/ads1.jpg" data-original="寻找真正的大咖"  class="adLazy"></a>
+  </div>  
+
+  <div class="designDynamic">
+    <div class="indexTit">
+      <img alt="设计师动态" src="img/moduleTit3.png">
+    </div>
+    <div class="conWrap">
+      <div class="dynamicWrap">
+        <ul>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer1.jpg"></span>
+            </div>
+            <div class="pullLeft text">近期刚刚参与了多个项目的投标</div>
+            <div class="bot">
+              <div class="name pullLeft">路明1</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer2.jpg"></span>
+            </div>
+            <div class="pullLeft text">用心做设计，让设计回归本身，推崇轻装修重装饰的手法，这些年对设计感悟很多，希望能找到当初的执着。</div>
+            <div class="bot">
+              <div class="name pullLeft">路明路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer3.jpg"></span>
+            </div>
+            <div class="pullLeft text">近期刚刚参与了多个项目的投标</div>
+            <div class="bot">
+              <div class="name pullLeft">路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer4.jpg"></span>
+            </div>
+            <div class="pullLeft text">近期刚刚参与了多个项目的投标</div>
+            <div class="bot">
+              <div class="name pullLeft">路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer5.jpg"></span>
+            </div>
+            <div class="pullLeft text">近期刚刚参与了多个项目的投标</div>
+            <div class="bot">
+              <div class="name pullLeft">路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer6.jpg"></span>
+            </div>
+            <div class="pullLeft text">近期刚刚参与了多个项目的投标</div>
+            <div class="bot">
+              <div class="name pullLeft">路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer7.jpg"></span>
+            </div>
+            <div class="pullLeft text">近期刚刚参与了多个项目的投标</div>
+            <div class="bot">
+              <div class="name pullLeft">路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer8.jpg"></span>
+            </div>
+            <div class="pullLeft text">用心做设计，让设计回归本身，推崇轻装修重装饰的手法，这些年对设计感悟很多，希望能找到当初的执着。</div>
+            <div class="bot">
+              <div class="name pullLeft">路明路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer1.jpg"></span>
+            </div>
+            <div class="pullLeft text">用心做设计，让设计回归本身，推崇轻装修重装饰的手法，这些年对设计感悟很多，希望能找到当初的执着。</div>
+            <div class="bot">
+              <div class="name pullLeft">路明路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer2.jpg"></span>
+            </div>
+            <div class="pullLeft text">用心做设计，让设计回归本身，推崇轻装修重装饰的手法，这些年对设计感悟很多，希望能找到当初的执着。</div>
+            <div class="bot">
+              <div class="name pullLeft">路明路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer3.jpg"></span>
+            </div>
+            <div class="pullLeft text">用心做设计，让设计回归本身，推崇轻装修重装饰的手法，这些年对设计感悟很多，希望能找到当初的执着。</div>
+            <div class="bot">
+              <div class="name pullLeft">路明路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer4.jpg"></span>
+            </div>
+            <div class="pullLeft text">用心做设计，让设计回归本身，推崇轻装修重装饰的手法，这些年对设计感悟很多，希望能找到当初的执着。</div>
+            <div class="bot">
+              <div class="name pullLeft">路明路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer5.jpg"></span>
+            </div>
+            <div class="pullLeft text">用心做设计，让设计回归本身，推崇轻装修重装饰的手法，这些年对设计感悟很多，希望能找到当初的执着。</div>
+            <div class="bot">
+              <div class="name pullLeft">路明路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+          <li>
+            <div class="pullLeft">
+              <span class="pic"><img src="img/designer6.jpg"></span>
+            </div>
+            <div class="pullLeft text">用心做设计，让设计回归本身，推崇轻装修重装饰的手法，这些年对设计感悟很多，希望能找到当初的执着。</div>
+            <div class="bot">
+              <div class="name pullLeft">路明路明</div>
+              <div class="time pullRight">2016年4月15日</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsInfo" id="newsInfo">
+    <div class="indexTit">
+      <img alt="新闻资讯" src="img/moduleTit4.png">
+    </div>
+    <div class="moduleTit newsTit">
+      <a href="javascript:void(0)" class="active">最新活动<span><img src="img/newsBg.png"></span></a>
+      <a href="javascript:void(0)">新闻资讯<span><img src="img/newsBg.png"></span></a>
+      <a href="javascript:void(0)">话题专访<span><img src="img/newsBg.png"></span></a>
+    </div>
+    <div class="conWrap">
+      <div class="newsInfoTog newAct ">
+        <div class="left pullLeft">
+          <a href="#">
+            <img src="img/newsInfo1.jpg" alt="财富与艺术的巅峰对决">
+            <div class="infoTips">财富与艺术的巅峰对决</div>
+          </a>
+        </div>
+        <div class="right pullLeft">
+          <div class="newsTogCon">
+            <ul>
+              <li class="active">
+                <a href="#">
+                  <div class="time">
+                    <p class="day">1</p>
+                    <p class="year">2015.12</p>
+                  </div>
+                  <div class="text">
+                    <h2>财富与艺术的巅峰对决</h2>
+                    <p>这里，有您想要的室内装修风格；这里，有你那个想要的室内设计老师；这里，有您想要的实景样板工地；让阅历沉淀你的品位，让风格解读你的生活。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="time">
+                    <p class="day">2</p>
+                    <p class="year">2015.4</p>
+                  </div>
+                  <div class="text">
+                    <h2>2015高端别墅大宅装修设计展览会</h2>
+                    <p>这次装饰展览会，将会展示各位海归设计大师的获奖作品，2014年的经典案例集合，及未来新设计理念和潮流风格的发布。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="time">
+                    <p class="day">3</p>
+                    <p class="year">2015.12</p>
+                  </div>
+                  <div class="text">
+                    <h2>财富与艺术的巅峰对决</h2>
+                    <p>这里，有您想要的室内装修风格；这里，有你那个想要的室内设计老师；这里，有您想要的实景样板工地；让阅历沉淀你的品位，让风格解读你的生活。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="time">
+                    <p class="day">4</p>
+                    <p class="year">2015.4</p>
+                  </div>
+                  <div class="text">
+                    <h2>2015高端别墅大宅装修设计展览会</h2>
+                    <p>这次装饰展览会，将会展示各位海归设计大师的获奖作品，2014年的经典案例集合，及未来新设计理念和潮流风格的发布。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="time">
+                    <p class="day">5</p>
+                    <p class="year">2015.4</p>
+                  </div>
+                  <div class="text">
+                    <h2>财富与艺术的巅峰对决</h2>
+                    <p>这次装饰展览会，将会展示各位海归设计大师的获奖作品，2014年的经典案例集合，及未来新设计理念和潮流风格的发布。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="time">
+                    <p class="day">6</p>
+                    <p class="year">2015.4</p>
+                  </div>
+                  <div class="text">
+                    <h2>2015高端别墅大宅装修设计展览会</h2>
+                    <p>这次装饰展览会，将会展示各位海归设计大师的获奖作品，2014年的经典案例集合，及未来新设计理念和潮流风格的发布。</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="time">
+                    <p class="day">7</p>
+                    <p class="year">2015.4</p>
+                  </div>
+                  <div class="text">
+                    <h2>财富与艺术的巅峰对决</h2>
+                    <p>这次装饰展览会，将会展示各位海归设计大师的获奖作品，2014年的经典案例集合，及未来新设计理念和潮流风格的发布。</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <span class="changeList pullRight" id="changeList" style="position:relative;z-index;99999">
+            <a class="prevList" href="javascript:void(0)"></a>
+            <a class="nextList" href="javascript:void(0)"></a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ads adBorder">
+    <a title="寻找真正的大咖" href="#"><img alt="寻找真正的大咖" data-original="img/ads2.jpg" class="adLazy"></a>
+  </div>
+
+
+  <!--foooter-->
+  <div class="footer">
+    <div class="conWrap">
+      <div class="top">
+        <div class="topLinks">
+          <div class="leftLogo pullLeft">
+            <div class="tips">
+              <span>豪宅</span><em>|</em>
+              <span>会所</span><em>|</em>
+              <span>展示</span>
+            </div> 
+            <img src="img/footerLogo.jpg" alt="高端设计就上设计范">
+            <p class="tel"><img src="img/tel.jpg" alt="400-066-3066"></p>
+          </div>
+          <div class="footList pullLeft">
+            <dl>
+              <dt>关于我们</dt>
+              <dd><a href="#">公司简介</a></dd>
+              <dd><a href="#">招聘英才</a></dd>
+              <dd><a href="#">招商加盟</a></dd>
+              <dd><a href="#">联系我们</a></dd>
+            </dl> 
+            <dl>
+              <dt>新手必读</dt>
+              <dd><a href="#">注册用户</a></dd>
+              <dd><a href="#">购买指导</a></dd>
+              <dd><a href="#">全国站点</a></dd>
+              <dd><a href="#">下载APP</a></dd>
+            </dl> 
+            <dl>
+              <dt>服务指南</dt>
+              <dd><a href="#">服务流程</a></dd>
+              <dd><a href="#">配送安装</a></dd>
+              <dd><a href="#">售后服务</a></dd>
+            </dl> 
+            <dl>
+              <dt>购物保障</dt>
+              <dd><a href="#">大咖认证</a></dd>
+              <dd><a href="#">多样选择</a></dd>
+              <dd><a href="#">星级服务</a></dd>
+              <dd><a href="#">监督管理</a></dd>
+            </dl> 
+          </div>
+          <div class="qrCode pullLeft">
+            <div class="pullLeft">
+              <img src="img/qrCode1.jpg" alt="设计范微信二维码">
+              <p>设计范微信二维码</p>
+            </div>
+            <div class="pullLeft">
+              <img src="img/qrCode2.jpg" alt="设计范微博二维码">
+              <p>设计范微博二维码</p>
+            </div>
+          </div>
+        </div>
+        <ul class="botEntrance">
+          <li>
+            <a href="#">
+             <img src="img/linkBarIcon1.png" alt="真正的大咖">
+              <p>真正的大咖</p> 
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/linkBarIcon2.png" alt="选择范围广">
+              <p>选择范围广</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/linkBarIcon3.png" alt="皇家式服务">
+              <p>皇家式服务</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/linkBarIcon4.png" alt="监管和保证">
+              <p>监管和保证</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bot">
+      <p>Copyright © 2016 Wuhan Han nationality Technology Co. Ltd. All Rights Reserved. </p>
+      <p>版权所有：武汉市瀚族科技有限公司</p>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    (function($){
+      $().ready(function(){
+        $(".dynamicWrap").designDynamic(2500);
+
+        $("img.casePic").lazyload({effect: "fadeIn"});
+        $("img.adLazy").lazyload({effect: "fadeIn"});
+        $("img.masterLazy").lazyload({effect: "fadeIn"});
+
+
+      })
+    })(jQuery);
+     
+  </script>
 
 </body>
 </html>
