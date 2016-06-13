@@ -42,47 +42,61 @@ body{background: #f4f4f4}
 	border-top: 3px solid #fff;}
 .designFilter a.active{border-top: 3px solid #282c35}
 .worksCase .caseCon{background: #fff;margin-top: 10px;}
+.worksCase .caseCon .right .tag{margin-bottom: 6px;}
 
 
+/*newestAct 最新活动*/
+.newestAct{margin-top: 6px;}
+.newestAct .tit{height: 50px;border-top: 3px solid #676b6c;border-bottom: 1px solid #d9d9d9;line-height: 50px;padding: 0 10px;background: #fff;
+	font-size: 22px;color: #5c6063;font-weight: normal;}
+.newestAct .tit .more a{font-size: 14px;color: #5c6061}
+.newestAct .tit img{margin-top: 16px;float: left;margin-right: 5px;}
+.newestAct .newsInfo{background: #fff}
+.newestAct .newsInfo .conWrap{padding:10px 5px 20px;}
+
+.newestAct .act{background: #fff;clear: both;padding-bottom: 30px;}
+.newestAct .act li{width: 209px;padding: 10px 10px 0;border-right: 1px solid #d9d9d9;position: relative;padding-bottom: 30px;float: left;}
+.newestAct .act li:last-child{border-right: 0}
+.newestAct .act ul{border-bottom: 1px solid #d8d8d8;overflow: hidden;}
+.newestAct .act li a{color: #5b615f;font-size: 13px;}
+.newestAct .act li h2{color: #201f24;font-weight: normal;font-size: 16px;margin-bottom: 5px;margin-top: 3px;}
+.newestAct .act li .actIcon{position: absolute;right: 0;bottom: 0;}
+.newestAct .act li p{line-height: 26px;}
+
+.newestAct .interview li{background: #fff;margin: 5px 7px 5px 1px;box-shadow: 0 0 3px #dbdbdb;float: left;padding: 12px;border-bottom: 2px solid #b2b2b2}
+.newestAct .interview li:nth-of-type(3n){margin-right: 1px;}
+.newestAct .interview li h3{font-size: 16px;color: #000000;margin: 10px 0 18px;}
+.newestAct .interview li h4{font-size: 13px;color: #000000;}
+.newestAct .interview li p{font-size: 13px;color: #5b6161;line-height: 22px;}
+.newestAct .interview li a{display: inline-block;}
+.newestAct .interview li:hover{border-bottom: 2px solid #f4b549}
+.newestAct .interview ul{overflow: hidden;}
 
 
+/*designerCenter 设计师个人主页*/
+.designCenter{margin:10px auto 0;width: 1150px;}
+.designVoice{background: #ccc;padding: 30px;overflow: hidden;}
+.designCenter .tit{border-bottom: 2px dashed #ca9b6d;padding-bottom: 5px;font-size: 18px;margin-bottom: 30px;}
+.designCenter .designVoice .userInfo{width: 300px;background: #fff;box-shadow: 0 0 5px #adaeb2;border:1px solid #acabb0;}
 
+.designCenter .interviewInfo{clear: both;}
+.designCenter .interviewInfo .info{width: 786px;background: #fff;padding: 10px;}
+.designCenter .interviewInfo .info img{height: 211px;}
+.designCenter .interviewInfo .info .details{width: 515px;margin-left: 15px;padding-left: 15px;border-left: 1px solid #d0d0d0;
+	height: 210px;overflow: hidden;}
+.designCenter .interviewInfo .info h2{font-size: 16px;margin-bottom: 10px;font-weight: normal;}
+.designCenter .interviewInfo .info .top p{color: #5c6061;line-height: 24px;text-indent: 2em;font-size: 15px;}
+.designCenter .interviewInfo .info .top{border-bottom: 1px solid #d0d0d0;padding-bottom: 30px;}
+.designCenter .interviewInfo .bot h3{font-size: 15px;margin-top: 10px;font-weight: normal;margin-bottom: 5px;}
+.designCenter .interviewInfo .bot p{color: #5c6061;line-height: 24px;font-size: 15px;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.designCenter .lifePhoto li{width: 240px;padding: 5px;background: #fff;margin-right: 30px;box-shadow: 0 0 5px #838383;
+	text-align: center;float: left;}
+.designCenter .lifePhoto li:last-child{margin-right: 0}
+.designCenter .lifePhoto li span{font-size: 14px;color: #5e5f61;border-top: 1px dashed #b29551;padding-top: 6px;
+	display: inline-block;padding-bottom: 4px;}
+.designCenter .lifePhoto li:hover span{color: #f4b549;border-color: #f4b549}
+.designCenter .lifePhoto{overflow: hidden;padding: 30px;}
 
 
 

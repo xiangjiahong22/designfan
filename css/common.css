@@ -72,9 +72,9 @@ i,em{font-style: normal}
 .caseShows .moduleTit{background: url(../img/caseTitBg.png) no-repeat center center;}
 .newsInfo .moduleTit{background: url(../img/newsInfoTitBg.png) no-repeat center center;}
 
-.designMaster .masterCon{width: 1150px;margin: 0 auto;overflow: hidden;margin-top: 20px;padding-bottom: 20px;}
+.designMaster .masterCon{width: 1150px;margin: 0 auto;overflow: hidden;margin-top: 13px;padding-bottom: 20px;}
 .designMaster .masterCon li{width: 360px;background: #fff;box-shadow: 0 0 5px #afb0b2;margin: 5px 25px 12px 5px;border-bottom: 4px solid transparent;
-	overflow: hidden;float: left;}
+	overflow: hidden;float: left;padding-bottom: 10px;}
 .designMaster .masterCon li:hover{border-bottom: 4px solid #f4b649;}
 .designMaster .masterCon li:nth-of-type(3n){margin-right: 5px;}
 .designMaster .masterCon li:last-child{border:none;background: none;box-shadow: none;}
@@ -105,8 +105,8 @@ i,em{font-style: normal}
 .caseShows .caseCon li{margin: 13px 5px 0 5px;width: 356px;background: #fff;padding: 7px 7px 10px;overflow: hidden;box-shadow: 0 0 5px #afb0b2;
 	float: left;}
 .caseShows .caseCon li:nth-of-type(3n+1){margin-left: 10px;}
-.caseShows .caseCon li:last-child{padding-bottom: 0;box-shadow: none;padding: 0;background: none;width: 370px;}
-.caseShows .caseCon li:last-child img{width: 370px;}
+.caseShows .caseCon li.last{padding-bottom: 0;box-shadow: none;padding: 0;background: none;width: 370px;}
+.caseShows .caseCon li.last img{width: 370px;}
 .caseShows .caseCon .caseInfo{padding: 0 12px 6px;}
 .caseShows .caseCon .caseInfo .headPic{display: inline-block;width: 92px;height: 92px;padding: 4px;background: #fff;
 	border-radius: 3px;position: relative;box-shadow: 0px 0px 5px #afb0b2}
@@ -122,16 +122,21 @@ clip:rect(2px, 152px, 90px, 63px); width: 175px;left: -57px;}
 .caseShows .caseCon .right .tag{margin-bottom: 19px;}
 .caseShows .caseCon .right .type{font-size: 15px;color: #5c6061;line-height: 22px;}
 
-.caseShows .caseCon .casePicWrap{display: inline-block;overflow: hidden;}
+.caseShows .caseCon .casePicWrap{display: inline-block;overflow: hidden;position: relative;}
 .caseShows .caseCon li .casePic{transition:1s}
 .caseShows .caseCon li:hover .casePic{ -webkit-transform:scale(1.2);-moz-transform:scale(1.2);transform:scale(1.2);}
+.caseShows .caseCon li:hover .mask{display: block;}
+
+.caseShows .caseCon .casePicWrap .mask{position: absolute;width: 100%;height: 100%;left: 0;top: 0;bottom: 0;
+	background: url(../img/linkBarIcon1.png) rgba(0,0,0,0.5) no-repeat center center;display: none;}
 
 
 .ads{width: 1150px;margin: 20px auto 0;overflow: hidden;height: 99px;}
 .ads a{display: inline-block;width: 100%;}
 .adBorder{border-top: 3px solid #f4b93a}
 
-.designDynamic{margin-top: 22px;background: url(../img/dynamicBg.jpg) no-repeat center top;overflow: hidden;padding-bottom: 17px;}
+.designDynamic{margin-top: 22px;background: url(../img/dynamicBg.jpg) no-repeat center top;overflow: hidden;padding-bottom: 17px;
+	clear: both;}
 .designDynamic .dynamicWrap{position: relative;font-size: 16px;color: #5c6061;overflow: hidden;}
 .designDynamic .dynamicWrap ul{position: absolute;left: 0;top: 0;}
 .designDynamic .dynamicWrap li{width: 324px;margin-right: 14px;float: left;background: #ccc;height: 90px;padding: 18px 25px 6px;
@@ -162,6 +167,7 @@ clip:rect(2px, 152px, 90px, 63px); width: 175px;left: -57px;}
 .newsInfo .right h2{font-size: 18px;font-weight: normal;}
 .newsInfo .right .text p{margin-top: 10px;line-height: 23px;}
 .newsInfo .right .text a{color: #5c6061}
+.newsInfo .right .changeList{margin-right: 15px;}
 .newsInfo .right .changeList a{display: inline-block;width: 35px;height: 35px;float: left;}
 .newsInfo .right .prevList{background: url(../img/prevList.gif) no-repeat center center;}
 .newsInfo .right .nextList{background: url(../img/nextList.gif) no-repeat center center;}
