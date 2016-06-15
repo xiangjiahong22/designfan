@@ -4,8 +4,8 @@ a{text-decoration: none;outline: none;}
 a:hover,a:focus{text-decoration: none;outline: none;border:none;}
 a:visited {text-decoration: none;}
 img{border:0;}
-body,html{font-family: "SingleMaltaRegular Regular","微软雅黑";background: #fff;}
-input,textarea{font-family: "SingleMaltaRegular Regular","微软雅黑";font-size: 14px;color: #666}
+body,html{font-family: "微软雅黑","宋体";background: #fff;}
+input,textarea{font-family: "微软雅黑","宋体";font-size: 14px;color: #666}
 input:focus, input:active:focus{outline: none}
 i,em{font-style: normal}
 
@@ -81,16 +81,20 @@ i,em{font-style: normal}
 .designMaster .masterCon .masterTop{padding: 5px;}
 .designMaster .masterCon .masterInfo{padding:0 20px;overflow: hidden;background: url(../img/masterNameBg.png) no-repeat center top;}
 .designMaster .masterCon .nameLine .name{font-size: 25px;color: #000000;margin-right: 50px;}
-.designMaster .masterCon .nameLine a{display: inline-block;width: 76px;height: 22px;line-height: 22px;text-align: center;font-size: 14px;
-	color: #fff;border-radius: 3px;margin-right: 10px;}
-.designMaster .masterCon .nameLine a.region{background: #333366}
-.designMaster .masterCon .nameLine a.international{background: #336666}
 .designMaster .masterCon .masterMsg{margin-top: 5px;font-size: 15px;}
 .designMaster .masterCon .masterMsg .left{margin-right: 80px;}
 .designMaster .masterCon .masterMsg .time{color: #5c6061;text-align: center;}
 .designMaster .masterCon .masterMsg .service{display: inline-block;width: 87px;height: 26px;background: #9b9fa0;color: #fff;
 	text-align: center;line-height: 26px;border-radius: 3px;margin-top: 6px;}
 .designMaster .masterCon .masterMsg .right{color: #5c6061;line-height: 20px;}
+
+a.tag{display: inline-block;width: 76px;height: 22px;line-height: 21px!important;text-align: center;font-size: 14px;
+	color: #fff!important;border-radius: 3px;margin-right: 10px;}
+a.region{background: #333366}
+a.international{background: #336666}
+
+.moreCases{position: relative;display: inline-block;}
+.moreCases .checkBtn{position: absolute;top: 51%;left: 11%}
 
 
 .linkBar{height: 178px;background: #c9cccd;}
@@ -194,7 +198,8 @@ clip:rect(2px, 152px, 90px, 63px); width: 175px;left: -57px;}
 .footer .topLinks .footList dl dd a{color: #fff;}
 .footer .topLinks .footList dl dd a:hover{color: #f4b649;}
 .footer .qrCode div{padding-left: 43px;text-align: center;}
-.footer .qrCode div img{display: inline-block;}
+.footer .qrCode div img{display: inline-block;width: 87px;height: 87px;}
+.footer .qrCode .qrCodeBorder{display: inline-block;background: #fff;padding: 6px;}
 .footer .qrCode div p{font-size: 14px;color: #fff;margin-top: 10px;}
 
 .footer .botEntrance{clear: both;text-align: center;padding: 30px 0 20px;}

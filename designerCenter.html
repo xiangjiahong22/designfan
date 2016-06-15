@@ -12,6 +12,7 @@
   <script type="text/javascript" src="js/common.js"></script>
   <script type="text/javascript" src="js/jquery.plugins.js"></script>
   <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+  <script type="text/javascript" src="js/galleria.js"></script><!--点击图片全屏-->
 
 </head>
 <body>
@@ -109,66 +110,505 @@
     <a href="javascript:void(0)">我的动态</a>
   </div>
 
-  <div class="designCenter">
-    <img src="img/designCenter.jpg">
-    <div class="designVoice">
-      <div class="tit">设计之声 DESIGN OF VOICE</div>
-      <div class="pullLeft video">
-        <embed width="770px" height="470px" align="middle" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" allowfullscreen="true" src="http://player.youku.com/player.php/sid/XMTI5NDAwMDcyNA==/v.swf">
-      </div>
-      <div class="pullRight userInfo">
-        sdf
-      </div>
-      <div class="interviewInfo">
-        <div class="pullLeft">
-          <img src="img/interviewLeft.jpg">
+  <div class="designCenter toggleCon">
+    <div class="designTog toggle">
+      <img src="img/designCenter.jpg">
+      <div class="designVoice">
+        <div class="tit">设计之声 DESIGN OF VOICE</div>
+        <div class="pullLeft video">
+          <embed width="770px" height="470px" align="middle" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" allowfullscreen="true" src="http://player.youku.com/player.php/sid/XMTI5NDAwMDcyNA==/v.swf">
         </div>
-        <div class="pullRight info">
+        <div class="pullRight userInfo">
+          <div class="top">
+            <div class="pullLeft tagCon">
+              <p><a href="#" class="region tag">武汉大咖</a></p>
+              <p><a href="#" class="international tag">国际大师</a></p>
+            </div>
+            <div class="pullLeft userIcon">
+              <span class="icon"><img src="img/designer1.jpg"></span>
+              <p class="name">李凡浩</p>
+            </div>
+            <div class="pullLeft appoint ">
+              <a href="#">我要预约</a>
+            </div>
+          </div>
+          <div class="con">
+            <ul>
+              <li>
+                <span class="head">设计经验：</span>
+                <div class="details">15年以上</div>
+              </li>
+              <li>
+                <span class="head">擅长空间：</span>
+                <div class="details">豪华别墅/办公空间</div>
+              </li>
+              <li>
+                <span class="head">所在地：</span>
+                <div class="details">武汉</div>
+              </li>
+              <li>
+                <span class="head">设计理念：</span>
+                <div class="details">在大自然中寻找设计灵感</div>
+              </li>
+              <li>
+                <span class="head">代表作品：</span>
+                <div class="details">
+                  <p><a href="#">武汉沿江大道路虎4S店</a></p>
+                  <p><a href="#">武汉金地格林别墅</a></p>
+                  <p><a href="#">武汉金地格林别墅</a></p>
+                </div>
+              </li>
+            </ul> 
+            <div class="tips"><span>#休闲会所</span><span>#豪华别墅</span><span>#酒店餐饮</span></div>
+          </div>
+          <div class="bot">
+            <ul>
+              <li>
+                <a href="#"><img src="img/moreWork1.jpg" title="行走的艺术"></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/moreWork2.jpg" title="行走的艺术"></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/moreWork3.jpg" title="行走的艺术"></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/moreWork4.jpg" title="行走的艺术"></a>
+              </li>
+            </ul> 
+          </div>
+        </div>
+        <div class="interviewInfo">
           <div class="pullLeft">
-            <img src="img/interviewPic2.jpg">
+            <img src="img/interviewLeft.jpg">
           </div>
-          <div class="pullLeft details">
-            <div class="top">
-               <h2>设计本访谈第199期：徐天华</h2>
-               <p>背景醍醐子航设计事务所(非凡设计事务所)创始人，《交换空间》特约设计师，十年以上设计经验，擅长居住宅，办公室，别墅豪宅，酒店，餐厅等空间设计。</p>
+          <div class="pullRight info">
+            <div class="pullLeft">
+              <img src="img/interviewPic2.jpg">
             </div>
-            <div class="bot">
-              <h3>直观印象</h3>
-              <p>一直行走在路上，上升空间不断在扩充，作品不空洞，不浮躁。</p>
+            <div class="pullLeft details">
+              <div class="top">
+                 <h2>设计本访谈第199期：徐天华</h2>
+                 <p>背景醍醐子航设计事务所(非凡设计事务所)创始人，《交换空间》特约设计师，十年以上设计经验，擅长居住宅，办公室，别墅豪宅，酒店，餐厅等空间设计。</p>
+              </div>
+              <div class="bot">
+                <h3>直观印象</h3>
+                <p>一直行走在路上，上升空间不断在扩充，作品不空洞，不浮躁。</p>
+              </div>
             </div>
           </div>
+        </div>  
+      </div>
+      <div class="lifePhoto">
+        <div class="tit">生活动态 LIFE PHOTO</div>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/lifePhoto1.jpg">
+              <span>去湖北省博物馆参观了，收获颇多。</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/lifePhoto2.jpg">
+              <span>去湖北省博物馆参观了，收获颇多。</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/lifePhoto3.jpg">
+              <span>去湖北省博物馆参观了，收获颇多。</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/lifePhoto4.jpg">
+              <span>去湖北省博物馆参观了，收获颇多。</span>
+            </a>
+          </li>
+        </ul> 
+      </div>
+      <div class="award">
+        <div class="tit">荣誉奖项 HONORARY AWARD</div>
+        <div class="pullLeft slide">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/awardPic1.jpg" title="日本G-MARK设计奖">
+                <p class="time">2015/12/23</p>
+                <p class="awardName">日本G-MARK设计奖</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/awardPic2.jpg" title="中国好设计奖">
+                <p class="time">2016/01/22</p>
+                <p class="awardName">中国好设计奖</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/awardPic3.jpg" title="Australian Design Awards">
+                <p class="time">2016/10/22</p>
+                <p class="awardName">Australian Design Awards</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/awardPic4.jpg" title="Compasso d`Oro 设计奖">
+                <p class="time">2014/12/22</p>
+                <p class="awardName">Compasso d`Oro 设计奖</p>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>  
+        <div class="pullRight ad"><img src="img/awardAds.jpg"></div>
+      </div>
+      <div class="interests">
+        <div class="tit">兴趣爱好 INTERESTS</div>
+        <dl>
+          <dt>设计</dt>
+          <dd><img src="img/interestsDesign.jpg"></dd>
+        </dl>
+        <dl>
+          <dt>摄影</dt>
+          <dd><img src="img/interestsPhoto.jpg"></dd>
+        </dl>
+        <dl>
+          <dt>旅游</dt>
+          <dd><img src="img/interestsTravel.jpg"></dd>
+        </dl>
+        <dl>
+          <dd><img src="img/interestsBook.jpg"></dd>
+          <dt>看书</dt>
+        </dl>
+        <dl>
+          <dd><img src="img/interestsSports.jpg"></dd>
+          <dt>运动</dt>
+        </dl>
+      </div>
+      <div class="moreWork">
+        <div class="moreWorkCon">
+          <ul>
+            <li>
+              <a href="#">
+               <img src="img/moreWork1.jpg">
+               <p>1最接近天空的距离，最接近心的距离</p> 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+               <img src="img/moreWork2.jpg">
+               <p>2优雅、清净、自然呼吸，感受自然的馈赠</p> 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+               <img src="img/moreWork3.jpg">
+               <p>3工作时间也有着宅在家的舒适</p> 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+               <img src="img/moreWork4.jpg">
+               <p>4色彩的碰撞，最大胆的搭配</p> 
+              </a>
+            </li>
+          </ul>
+        </div>  
+      </div>
     </div>
-    <div class="lifePhoto">
-      <div class="tit">生活动态 LIFE PHOTO</div>
-      <ul>
-        <li>
-          <a href="#">
-            <img src="img/lifePhoto1.jpg">
-            <span>去湖北省博物馆参观了，收获颇多。</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/lifePhoto2.jpg">
-            <span>去湖北省博物馆参观了，收获颇多。</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/lifePhoto3.jpg">
-            <span>去湖北省博物馆参观了，收获颇多。</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/lifePhoto4.jpg">
-            <span>去湖北省博物馆参观了，收获颇多。</span>
-          </a>
-        </li>
-      </ul> 
+    <div class="designTog toggle hide">
+      <div class="caseShows">
+        <div class="caseCon">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="casePicWrap">
+                  <img src="img/caseShow1.jpg" class="casePic" alt="闲庭雅趣">
+                  <span class="mask"></span>
+                </span>
+                <div class="caseInfo">
+                  <div class="pullLeft left">
+                    <span class="headPic">
+                      <img src="img/designer1.jpg">
+                    </span>
+                    <p class="name">路明</p>
+                    <p class="time">从业16年</p>
+                  </div>
+                  <div class="pullLeft right">
+                    <h2>英山碧晗度假酒店</h2>
+                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="type">类别：酒店空间</p>
+                    <p class="type">风格：现代简约</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="casePicWrap">
+                  <img src="img/caseShow2.jpg" class="casePic" alt="闲庭雅趣">
+                  <span class="mask"></span>
+                </span>
+                <div class="caseInfo">
+                  <div class="pullLeft left">
+                    <span class="headPic">
+                      <img src="img/designer2.jpg">
+                    </span>
+                    <p class="name">路明</p>
+                    <p class="time">从业16年</p>
+                  </div>
+                  <div class="pullLeft right">
+                    <h2>英山碧晗度假酒店</h2>
+                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="type">类别：酒店空间</p>
+                    <p class="type">风格：现代简约</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="casePicWrap">
+                  <img src="img/caseShow3.jpg" class="casePic" alt="闲庭雅趣">
+                  <span class="mask"></span>
+                </span>
+                <div class="caseInfo">
+                  <div class="pullLeft left">
+                    <span class="headPic">
+                      <img src="img/designer3.jpg">
+                    </span>
+                    <p class="name">路明</p>
+                    <p class="time">从业16年</p>
+                  </div>
+                  <div class="pullLeft right">
+                    <h2>英山碧晗度假酒店</h2>
+                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="type">类别：酒店空间</p>
+                    <p class="type">风格：现代简约</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="casePicWrap">
+                  <img src="img/caseShow4.jpg" class="casePic" alt="闲庭雅趣">
+                  <span class="mask"></span>
+                </span>
+                <div class="caseInfo">
+                  <div class="pullLeft left">
+                    <span class="headPic">
+                      <img src="img/designer4.jpg">
+                    </span>
+                    <p class="name">路明</p>
+                    <p class="time">从业16年</p>
+                  </div>
+                  <div class="pullLeft right">
+                    <h2>英山碧晗度假酒店</h2>
+                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="type">类别：酒店空间</p>
+                    <p class="type">风格：现代简约</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="casePicWrap">
+                  <img src="img/caseShow5.jpg" class="casePic" alt="闲庭雅趣">
+                  <span class="mask"></span>
+                </span>
+                <div class="caseInfo">
+                  <div class="pullLeft left">
+                    <span class="headPic">
+                      <img src="img/designer5.jpg">
+                    </span>
+                    <p class="name">路明</p>
+                    <p class="time">从业16年</p>
+                  </div>
+                  <div class="pullLeft right">
+                    <h2>英山碧晗度假酒店</h2>
+                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="type">类别：酒店空间</p>
+                    <p class="type">风格：现代简约</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="casePicWrap">
+                  <img src="img/caseShow6.jpg" class="casePic" alt="闲庭雅趣">
+                  <span class="mask"></span>
+                </span>
+                <div class="caseInfo">
+                  <div class="pullLeft left">
+                    <span class="headPic">
+                      <img src="img/designer6.jpg">
+                    </span>
+                    <p class="name">路明</p>
+                    <p class="time">从业16年</p>
+                  </div>
+                  <div class="pullLeft right">
+                    <h2>英山碧晗度假酒店</h2>
+                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="type">类别：酒店空间</p>
+                    <p class="type">风格：现代简约</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="casePicWrap">
+                  <img src="img/caseShow7.jpg" class="casePic" alt="闲庭雅趣">
+                  <span class="mask"></span>
+                </span>
+                <div class="caseInfo">
+                  <div class="pullLeft left">
+                    <span class="headPic">
+                      <img src="img/designer7.jpg">
+                    </span>
+                    <p class="name">路明</p>
+                    <p class="time">从业16年</p>
+                  </div>
+                  <div class="pullLeft right">
+                    <h2>英山碧晗度假酒店</h2>
+                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="type">类别：酒店空间</p>
+                    <p class="type">风格：现代简约</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="casePicWrap">
+                  <img src="img/caseShow8.jpg" class="casePic" alt="闲庭雅趣">
+                  <span class="mask"></span>
+                </span>
+                <div class="caseInfo">
+                  <div class="pullLeft left">
+                    <span class="headPic">
+                      <img src="img/designer8.jpg">
+                    </span>
+                    <p class="name">路明</p>
+                    <p class="time">从业16年</p>
+                  </div>
+                  <div class="pullLeft right">
+                    <h2>英山碧晗度假酒店</h2>
+                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="type">类别：酒店空间</p>
+                    <p class="type">风格：现代简约</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="last">
+              <a href="#">
+                <img src="img/caseShowLast.jpg" title="查看更多案例">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div class="designTog myDynamic toggle hide">
+      <div class="designerData">
+        <div class="pullLeft pic">
+         <span><img src="img/designer1.jpg"></span> 
+        </div>
+        <div class="pullLeft name">
+          <h1>李凡浩</h1>
+          <ul>
+            <li>
+              <span class="infoTit">设计经验：</span>15年以上
+            </li>
+            <li>
+              <span class="infoTit">擅长空间：</span>豪华别墅/办公空间
+            </li>
+            <li>
+              <span class="infoTit">所 在 地 ：</span>武汉
+            </li>
+            <li>
+              <span class="infoTit">设计理念：</span>在大自然中找寻设计灵感
+            </li>
+          </ul>
+        </div>
+        <div class="pullLeft work">
+          <span class="infoTit pullLeft">代表作品：</span>
+          <ul class="pullLeft">
+            <li>武汉沿江大道路虎4S店</li>
+            <li>武汉金地格林别墅</li>
+            <li>武汉金地格林别墅</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeLine">
+        <div class="top">
+          <p class="time">2016年4月18日</p>
+          <h3>最近刚刚参与了几个项目的投标</h3>
+        </div>
+        <div class="con" id="galleriaCon1">
+          <ul>
+            <li><img src="img/timeLine1.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine2.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine3.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine4.jpg" title="行走的艺术"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeLine">
+        <div class="top">
+          <p class="time">2016年2月23日</p>
+          <h3>最近刚刚参与了几个项目的投标</h3>
+        </div>
+        <div class="con" id="galleriaCon2">
+          <ul>
+            <li><img src="img/timeLine5.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine6.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine7.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine8.jpg" title="行走的艺术"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeLine">
+        <div class="top">
+          <p class="time">2015年8月12日</p>
+          <h3>最近刚刚参与了几个项目的投标</h3>
+        </div>
+        <div class="con" id="galleriaCon3">
+          <ul>
+            <li><img src="img/timeLine9.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine10.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine11.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine12.jpg" title="行走的艺术"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeLine">
+        <div class="top">
+          <p class="time">2013年12月12日</p>
+          <h3>最近刚刚参与了几个项目的投标</h3>
+        </div>
+        <div class="con" id="galleriaCon4">
+          <ul>
+            <li><a href="img/interviewPic6.jpg" ><img src="img/timeLine13.jpg" title="行走的艺术"></a></li>
+            <li><img src="img/timeLine14.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine15.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine16.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine17.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine18.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine19.jpg" title="行走的艺术"></li>
+            <li><img src="img/timeLine20.jpg" title="行走的艺术"></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    
   </div>
 
 
@@ -223,11 +663,11 @@
           </div>
           <div class="qrCode pullLeft">
             <div class="pullLeft">
-              <img src="img/qrCode1.jpg" alt="设计范微信二维码">
+              <span class="qrCodeBorder"><img src="img/qrCode1.jpg" alt="设计范微信二维码"></span>
               <p>设计范微信二维码</p>
             </div>
             <div class="pullLeft">
-              <img src="img/qrCode2.jpg" alt="设计范微博二维码">
+              <span class="qrCodeBorder"><img src="img/qrCode2.jpg" alt="设计范微博二维码"></span>
               <p>设计范微博二维码</p>
             </div>
           </div>
@@ -270,16 +710,36 @@
   <script type="text/javascript">
     (function($){
       $().ready(function(){
-        $(".dynamicWrap").designDynamic(2500);
 
-        $("img.adLazy").lazyload({effect: "fadeIn"});
-        $("img.masterLazy").lazyload({effect: "fadeIn"});
+        $('.award .slide').seamlessRoll({scrollDelay:'2500',minLength:4});
+        $('.moreWork .moreWorkCon').seamlessRoll({scrollDelay:'100',minLength:3,scrollDistance:5,type:'smoth',animateTime:100});
 
+        $('.designVoice .bot').seamlessRoll({scrollDelay:'100',minLength:3,scrollDistance:3,type:'smoth',animateTime:100});
+        
+
+        $('img.adLazy').lazyload({effect: 'fadeIn'});
+        /*$('img.casePic').lazyload({effect: 'fadeIn'});*/
+
+         //加载Galleria插件  
+        Galleria.loadTheme('js/themes/lightbox/galleria.lightbox.js');  
+        $('.timeLine').each(function(i){
+          $('#galleriaCon'+(i+1),this).galleria({
+            transition: 'fade'
+          }); 
+        })
+       
+
+        //toggle hide
+        $('.designFilter').toggleHide();
 
       })
     })(jQuery);
      
   </script>
+
+
+
+ 
 
 </body>
 </html>

@@ -77,9 +77,37 @@ body{background: #f4f4f4}
 .designCenter{margin:10px auto 0;width: 1150px;}
 .designVoice{background: #ccc;padding: 30px;overflow: hidden;}
 .designCenter .tit{border-bottom: 2px dashed #ca9b6d;padding-bottom: 5px;font-size: 18px;margin-bottom: 30px;}
-.designCenter .designVoice .userInfo{width: 300px;background: #fff;box-shadow: 0 0 5px #adaeb2;border:1px solid #acabb0;}
+.designCenter .designVoice .userInfo{width: 300px;background: #fff;box-shadow: 0 0 5px #adaeb2;border:1px solid #acabb0;
+	background: url(../img/designVoice.jpg) #f4f4f4 no-repeat center top;}
+.designCenter .designVoice .userInfo .top{margin-top: 33px;padding: 0 15px 10px;overflow: hidden;}
+.designCenter .designVoice .userInfo .top .icon{position: relative;border-radius: 100%;width: 90px;height: 90px;border:2px solid #fff;
+	display: inline-block;overflow: hidden;}
+.designCenter .designVoice .userInfo .top .icon img{  border-radius: 3px;clip: rect(0px, 154px, 90px, 63px);display: inline-block;
+    left: -63px;position: absolute;width: 175px;}
+.designCenter .designVoice .userInfo .top .name{text-align: center;font-size: 16px;margin-top: 5px;}
+.designCenter .designVoice .userInfo .top .tagCon{margin-top: 50px;}
+.designCenter .designVoice .userInfo .top .tagCon .tag{margin-top: 10px;}
+.designCenter .designVoice .userInfo .appoint{margin-top: 72px;box-shadow: 0 0 5px #f87c00;margin-left: 3px;}
+.designCenter .designVoice .userInfo .appoint a{display: inline-block;width: 86px;height: 27px;line-height: 27px;color: #fff;
+	background: #fb8501;text-align: center;border-radius: 3px;}
 
-.designCenter .interviewInfo{clear: both;}
+.designCenter .designVoice .userInfo .con{margin: 12px 15px 10px;border-top: 1px solid #dbdbdb;border-bottom: 1px solid #dbdbdb;overflow: hidden;
+	font-size: 14px;}
+.designCenter .designVoice .userInfo .con li{clear: both;margin: 5px 0;overflow: hidden;}
+.designCenter .designVoice .userInfo .con .head{float: left;display: inline-block;width: 78px;}
+.designCenter .designVoice .userInfo .con .details{float: left;color: #5f6062}
+.designCenter .designVoice .userInfo .con .details a{color: #5f6062}
+.designCenter .designVoice .userInfo .con .details a:hover{color: #f4b549}
+.designCenter .designVoice .userInfo .con .tips{margin-top: 23px;margin-bottom: 10px;}
+.designCenter .designVoice .userInfo .con .tips span{color: #5f6062;display: inline-block;margin-left: 15px;}
+
+.designCenter .designVoice .userInfo .bot{margin: 0 10px 10px;width: 280px;overflow: hidden;height: 60px;position: relative;}
+.designCenter .designVoice .userInfo .bot li{float: left;width: 65px;margin-right: 10px;}
+.designCenter .designVoice .userInfo .bot li img{width: 65px;height: 60px;}
+.designCenter .designVoice .userInfo .bot ul{position: absolute;left: 0;top: 0;}
+
+
+.designCenter .interviewInfo{clear: both;padding-top: 15px;}
 .designCenter .interviewInfo .info{width: 786px;background: #fff;padding: 10px;}
 .designCenter .interviewInfo .info img{height: 211px;}
 .designCenter .interviewInfo .info .details{width: 515px;margin-left: 15px;padding-left: 15px;border-left: 1px solid #d0d0d0;
@@ -98,94 +126,157 @@ body{background: #f4f4f4}
 .designCenter .lifePhoto li:hover span{color: #f4b549;border-color: #f4b549}
 .designCenter .lifePhoto{overflow: hidden;padding: 30px;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.designCenter .award{background: url(../img/awardBg.jpg) #444 no-repeat center top;padding: 30px;overflow: hidden;}
+.designCenter .award .slide{width: 800px;position: relative;height: 255px;overflow: hidden;}
+.designCenter .award .slide ul{position: absolute;left: 0;top: 0;}
+.designCenter .award .tit{color: #fbfffa;border-color: #fbfffa;}
+.designCenter .award li{float: left;margin-right: 50px;text-align: center;width: 150px;}
+.designCenter .award li p.time{color: #b39451;font-size: 15px;margin: 13px 0;}
+.designCenter .award li p.awardName{color: #f6f6f6;font-size: 16px;text-overflow:ellipsis;overflow: hidden;white-space: nowrap;}
+
+.designCenter .interests{background: #e8e8e8;padding: 30px;overflow: hidden;}
+.designCenter .interests dl{float: left;}
+.designCenter .interests dl img:hover{opacity: 0.8;filter:alpha(opacity=80);}
+.designCenter .interests dl dt,.designCenter .interests dl dd{width: 180px;height: 180px;float: left;border-left:1px solid #e6e8e7;
+	border-bottom:1px solid #e6e8e7}
+.designCenter .interests dl dt{font-size: 18px;color: #fff;text-align: center;line-height: 180px;;}
+.designCenter .interests dl:nth-of-type(1) dt{background: #346667}
+.designCenter .interests dl:nth-of-type(2) dt{background: #333367}
+.designCenter .interests dl:nth-of-type(3) dt{background: #653366}
+.designCenter .interests dl:nth-of-type(4) dt{background: #990134}
+.designCenter .interests dl:nth-of-type(5) dt{background: #b39451}
+.designCenter .interests dt:hover{opacity: 0.8;filter:alpha(opacity=80);}
+
+.designCenter .moreWork{background: #efefef;padding: 30px 31px 30px 30px;overflow: hidden;}
+.designCenter .moreWork li{float: left;width: 338px;padding: 12px;background: #fff;margin-right: 1px;
+	position: relative;height: 210px;}
+.designCenter .moreWork li p{position: absolute;bottom: 12px;left: 12px;height: 45px;line-height: 45px;background: rgba(0,0,0,0.8);
+	width: 308px;padding: 0 15px;text-overflow:ellipsis;overflow: hidden;white-space: nowrap;}
+.designCenter .moreWork li a{display: inline-block;color: #fffdfe;font-size: 15px;}
+.designCenter .moreWork ul{position: absolute;left: 0;top:0;}
+.designCenter .moreWork .moreWorkCon{height: 235px;position: relative;overflow: hidden;}
+
+.designCenter .myDynamic{background: #d4d4d4;padding: 27px 30px;overflow: hidden;}
+.designCenter .myDynamic .pic span{display: inline-block;width: 100px;height: 100px;position: relative;border-radius: 8px;
+	overflow: hidden;}
+.designCenter .myDynamic .pic span img{display: inline-block;border-radius: 3px;position:absolute;
+clip:rect(1px, 156px, 99px, 58px); width: 175px;left: -57px;}
+.designCenter .myDynamic .designerData{background: #fff;overflow: hidden;padding: 17px 11px;border-radius: 5px;color: #5e5e60;
+	font-size: 15px;}
+.designCenter .myDynamic .designerData h1{font-size: 18px;color: #000}
+.designCenter .myDynamic .designerData .name{margin:0 60px 0 20px;}
+.designCenter .myDynamic .designerData .infoTit{display: inline-block;width: 84px;color: #010101;}
+.designCenter .myDynamic .designerData li{line-height: 22px;}
+.designCenter .myDynamic .designerData .work{margin-top: 23px;}
+
+.designCenter .timeLine{background: #fff;border-radius: 5px;margin-top: 8px;color: #5c6063}
+.designCenter .timeLine .top{padding: 25px 110px 5px;background: url(../img/timeLineTop.jpg) no-repeat left top;}
+.designCenter .timeLine .top .time{font-size: 13px;}
+.designCenter .timeLine .top h3{font-size: 16px;font-weight: normal;margin-top: 6px;}
+.designCenter .timeLine .con{padding: 0 24px 5px 110px;background: url(../img/timeLineCon.jpg) repeat-y 53px top;overflow: hidden;}
+.designCenter .timeLine .con li{width: 229px;margin-right: 10px;float: left;margin-bottom: 10px;height: 230px;}
+
+
+/*contactus 联系我们*/
+.contactus .con{overflow: hidden;clear: both;margin-top: 15px;}
+.contactus .con .aside{padding: 23px 60px 40px 40px;background: #fff;}
+.contactus .con .aside dl{margin-top: 15px;}
+.contactus .con .aside dt{font-size: 16px;font-weight: 600;margin-bottom: 5px;color: #333;}
+.contactus .con .aside dd a{display: inline-block;margin-left: 35px;color: #3f3f3f;line-height: 28px;border-bottom: 2px solid #fff;}
+.contactus .con .aside dd a.active{border-bottom: 2px solid #f4b549}
+.contactus .con .aside dd a:hover{color: #f4b549;}
+
+.contactus .con .article{margin-left: 200px;border-left: 1px solid #f4f4f4;padding-bottom: 50px;overflow: hidden;background: #fff;
+	margin-bottom: 25px;}
+.contactus .con .article .head{text-align: center;padding: 42px 0 30px;border-bottom: 1px solid #f4f4f4}
+.contactus .con .article h1{font-size: 20px;}
+.contactus .con .article .head .english{font-size: 20px;font-size: 14px;color: #f4b549;margin-top: 5px;text-transform:Uppercase;}
+
+.contactus .con .qrCodeCon {padding: 45px 0;border-bottom: 1px solid #f4f4f4;overflow: hidden;}
+.contactus .con .qrCodeCon .qrCode{float: left;margin-left: 158px;display: inline;}
+.contactus .con .qrCodeCon p{font-size: 23px;text-align: center;margin-top: 15px;}
+.contactus .con .qrCodeCon .textline{text-decoration: underline;}
+.contactus .con .baiduMap{margin: 55px 0 60px 20px;}
+
+.contactus .con .serviceHelp{padding-left: 57px;}
+.contactus .con .serviceHelp div{float: left;margin-right: 20px;}
+.contactus .con .serviceHelp .tel{font-size: 32px;color: #5c6063}
+.contactus .con .serviceHelp img{float: left;margin-top: -6px;margin-right: 35px;}
+.contactus .con .serviceHelp a{display: inline-block;width: 136px;height: 36px;border:2px solid #c8c8c8;text-align: center;
+	line-height: 35px;font-size: 14px;color: #000104}
+.contactus .con .serviceHelp a:hover{color: #f4b549;border-color: #f4b549}
+
+/*aboutus 公司简介*/
+.contactus .con .details{padding: 0 60px;}
+
+.contactus .con .details img{display: inline-block;margin: 16px 0 30px;}
+.contactus .con .details div.pic{text-align: center;}
+.contactus .con .details p{color: #5c6061;font-size: 14px;line-height: 26px;text-indent: 2em;}
+
+
+/*newsInfo活动资讯*/
+.newsInfoCon{background: #fff;overflow: hidden;margin-top: 10px;}
+.newsInfoCon .list{border-right: 1px solid #f4f4f4}
+.newsInfoCon .list ul li{padding: 30px;border-bottom: 1px solid #f4f4f4;overflow: hidden;font-size: 14px;color: #5c6061}
+.newsInfoCon .list ul li .left img{width: 200px;height: 140px;}
+.newsInfoCon .list ul li .right{width: 500px;margin-left: 30px;}
+.newsInfoCon .list ul li h3{font-size: 16px;color: #000}
+.newsInfoCon .list ul li p.time{font-size: 13px;color: #c0a560;margin-bottom: 5px;line-height: 20px;}
+.newsInfoCon .list ul li p a{font-size: 14px;color: #5c6061;line-height: 18px;}
+.newsInfoCon .list ul li p.idea{margin-top: 10px;}
+.newsInfoCon .list ul li p.idea .tit{font-size: 14px;color: #000}
+.newsInfoCon .list ul li p.tag{margin-top: 5px;}
+.newsInfoCon .page{text-align: center;padding: 40px 0;color: #5e5f63}
+.newsInfoCon .page a{color: #5b6161;display: inline-block;width: 31px;height: 31px;text-align: center;
+	line-height: 31px;font-size: 15px;border:1px solid #a0a0a0;border-radius: 3px;margin-right: 5px;}
+.newsInfoCon .page a.next,.newsInfoCon .page a.prev{width: auto;border:none;}
+.newsInfoCon .page a.next:hover,.newsInfoCon .page a.prev:hover{background: none;color: #5b6161}
+
+.newsInfoCon .page a.active{background: #000;color: #fff;border-color: #000;}
+.newsInfoCon .page a:hover{background: #000;color: #fff;border-color: #000;}
+.newsInfoCon .page .inp{width: 50px;height: 36px;border:1px solid #a1a1a1;text-align: center;}
+.newsInfoCon .page a.go{display: inline-block;width: 38px;height: 34px;line-height: 33px;text-align: center;
+	font-size: 15px;}
+.newsInfoCon .page a.go:hover{background: none;color: #5c6061;border-color: #a2a2a2}
+
+.newsInfoCon .ranking{width: 358px}
+.newsInfoCon .ranking .topAds{padding-top: 26px;text-align: center;border-bottom: 1px solid #f4f4f4;padding-bottom: 17px;}
+.newsInfoCon .ranking .topAds .adPic{width: 300px;display: inline-block;}
+.newsInfoCon .ranking .botRank h2{font-size: 20px;color: #000;text-align: center;padding: 7px 0;margin-bottom:8px;}
+.newsInfoCon .ranking .botRank .rankPic{float: left;margin-left: 30px;text-align: center;}
+.newsInfoCon .ranking .botRank .rankPic a{color: #000;}
+.newsInfoCon .ranking .botRank .rankPic a h4{margin: 5px 0;}
+.newsInfoCon .ranking .rankUl{clear: both;padding: 5px 0 0 25px;}
+.newsInfoCon .ranking .rankUl li{font-size: 14px;color: #101820;line-height: 24px;}
+.newsInfoCon .ranking .rankUl li img{margin-right: 10px;}
+.newsInfoCon .ranking .rankUl li a{color: #101820}
+.newsInfoCon .ranking .rankUl li a:hover{color: #f4b649}
+.newsInfoCon .ranking .botAds{padding: 20px 0 0 36px}
+
+
+
+/*login*/
+.loginRegCon{margin: 15px auto 20px;width: 1150px;min-height: 575px;background: url(../img/loginRegBg.jpg) #fff no-repeat 64px 110px;}
+.loginRegCon .loginRegInfo{float: right;margin-right: 115px;margin-top: 30px;}
+.loginRegCon .login{margin-top: 80px;}
+.loginRegCon .loginRegInfo h1{font-size: 28px;color: #555f68;font-weight: normal;}
+.loginRegCon .loginRegInfo dl{margin-top: 20px;}
+.loginRegCon .loginRegInfo dl dt{color: #171717;font-weight: 14px;margin-bottom: 8px;}
+.loginRegCon .loginRegInfo .inp{width: 310px;height: 40px;padding: 4px 5px;border:1px solid #ccd5db;border-radius: 3px;}
+.loginRegCon .loginRegInfo .subBtn{margin-top: 50px}
+.loginRegCon .loginRegInfo .subBtn .inp{cursor: pointer;background: #5c6061;color: #fff;border-radius: 5px;font-size: 16px;
+	border:1px solid #484c4d;}
+.loginRegCon .accountHelp{margin-top: 20px;font-size: 14px;}
+.loginRegCon .accountHelp a{color: #5b6161}
+.loginRegCon .accountHelp a:hover{color: #f4b549}
+
+/*register*/
+.loginRegCon .register .subBtn{margin-top: 10px}
+.loginRegCon .register dl{margin-top: 10px}
+.loginRegCon .register dl dt{margin-bottom: 3px}
+.loginRegCon .register dl .veriCode{width: 209px;margin-right: 5px;}
+.loginRegCon .register dl .getVericode{display: inline-block;width: 90px;height: 38px;background: #5c6061;border:1px solid #484c4d;
+	border-radius: 3px;line-height: 38px;text-align: center;color: #fff}
 
 
 
