@@ -204,12 +204,8 @@ clip:rect(2px, 152px, 90px, 63px); width: 175px;left: -57px;}
 .newsInfo .newAct ul li:hover span:nth-of-type(3){width: 536px;opacity: 1}
 .newsInfo .newAct ul li:hover span:nth-of-type(4){height: 179px;opacity: 1}
 
-
 .newsInfo .newsInterview a{float: left;}
 .newsInfo .newsInterview a img:hover{opacity: 0.8;filter:alpha(opacity=80);}
-
-
-
 
 .newsTit a{position: relative;}
 .newsTit a.active{background: #282c35;border-color: #4d5056;color: #fff}
@@ -241,29 +237,6 @@ clip:rect(2px, 152px, 90px, 63px); width: 175px;left: -57px;}
 .footer .botEntrance li p{font-size: 14px;}
 
 .footer .bot{background: #000000;text-align: center;color: #fff;font-size: 15px;line-height: 22px;padding: 13px 0;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
