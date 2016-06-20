@@ -111,7 +111,7 @@
   </div>
 
   <div class="designCenter toggleCon">
-    <div class="designTog toggle">
+    <div class="designTog toggle ">
       <img src="img/designCenter.jpg">
       <div class="designVoice">
         <div class="tit">设计之声 DESIGN OF VOICE</div>
@@ -176,6 +176,8 @@
                 <a href="#"><img src="img/moreWork4.jpg" title="行走的艺术"></a>
               </li>
             </ul> 
+            <span class="togBtn prev"><img src="img/moreWorkPrev.png"></span>
+            <span class="togBtn next"><img src="img/moreWorkNext.png"></span>
           </div>
         </div>
         <div class="interviewInfo">
@@ -338,7 +340,7 @@
                   </div>
                   <div class="pullLeft right">
                     <h2>英山碧晗度假酒店</h2>
-                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="tag"><span class="designType">会所装修设计</span></p>
                     <p class="type">类别：酒店空间</p>
                     <p class="type">风格：现代简约</p>
                   </div>
@@ -361,7 +363,7 @@
                   </div>
                   <div class="pullLeft right">
                     <h2>英山碧晗度假酒店</h2>
-                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="tag"><span class="designType">会所装修设计</span></p>
                     <p class="type">类别：酒店空间</p>
                     <p class="type">风格：现代简约</p>
                   </div>
@@ -384,7 +386,7 @@
                   </div>
                   <div class="pullLeft right">
                     <h2>英山碧晗度假酒店</h2>
-                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="tag"><span class="designType">会所装修设计</span></p>
                     <p class="type">类别：酒店空间</p>
                     <p class="type">风格：现代简约</p>
                   </div>
@@ -407,7 +409,7 @@
                   </div>
                   <div class="pullLeft right">
                     <h2>英山碧晗度假酒店</h2>
-                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="tag"><span class="designType">会所装修设计</span></p>
                     <p class="type">类别：酒店空间</p>
                     <p class="type">风格：现代简约</p>
                   </div>
@@ -430,7 +432,7 @@
                   </div>
                   <div class="pullLeft right">
                     <h2>英山碧晗度假酒店</h2>
-                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="tag"><span class="designType">会所装修设计</span></p>
                     <p class="type">类别：酒店空间</p>
                     <p class="type">风格：现代简约</p>
                   </div>
@@ -453,7 +455,7 @@
                   </div>
                   <div class="pullLeft right">
                     <h2>英山碧晗度假酒店</h2>
-                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="tag"><span class="designType">会所装修设计</span></p>
                     <p class="type">类别：酒店空间</p>
                     <p class="type">风格：现代简约</p>
                   </div>
@@ -476,7 +478,7 @@
                   </div>
                   <div class="pullLeft right">
                     <h2>英山碧晗度假酒店</h2>
-                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="tag"><span class="designType">会所装修设计</span></p>
                     <p class="type">类别：酒店空间</p>
                     <p class="type">风格：现代简约</p>
                   </div>
@@ -499,7 +501,7 @@
                   </div>
                   <div class="pullLeft right">
                     <h2>英山碧晗度假酒店</h2>
-                    <p class="tag"><span>会所装修设计</span></p>
+                    <p class="tag"><span class="designType">会所装修设计</span></p>
                     <p class="type">类别：酒店空间</p>
                     <p class="type">风格：现代简约</p>
                   </div>
@@ -595,7 +597,7 @@
         </div>
         <div class="con" id="galleriaCon4">
           <ul>
-            <li><a href="img/interviewPic6.jpg" ><img src="img/timeLine13.jpg" title="行走的艺术"></a></li>
+            <li><img src="img/timeLine13.jpg" title="行走的艺术"></li>
             <li><img src="img/timeLine14.jpg" title="行走的艺术"></li>
             <li><img src="img/timeLine15.jpg" title="行走的艺术"></li>
             <li><img src="img/timeLine16.jpg" title="行走的艺术"></li>
@@ -614,7 +616,7 @@
 
 
   <div class="ads adBorder noMarginSides">
-    <a title="寻找真正的大咖" href="#"><img alt="寻找真正的大咖" data-original="img/ads2.jpg" class="adLazy"></a>
+    <a title="寻找真正的大咖" href="#"><img alt="寻找真正的大咖" src="img/ads2.jpg"></a>
   </div>
 
 
@@ -714,10 +716,10 @@
         $('.award .slide').seamlessRoll({scrollDelay:'2500',minLength:4});
         $('.moreWork .moreWorkCon').seamlessRoll({scrollDelay:'100',minLength:3,scrollDistance:5,type:'smoth',animateTime:100});
 
-        $('.designVoice .bot').seamlessRoll({scrollDelay:'100',minLength:3,scrollDistance:3,type:'smoth',animateTime:100});
+        $('.designVoice .bot').seamlessRoll({scrollDelay:'100',minLength:3,scrollDistance:3,type:'smoth',animateTime:200});
         
 
-        $('img.adLazy').lazyload({effect: 'fadeIn'});
+        $('.timeLine pic').lazyload({effect: 'fadeIn'});
         /*$('img.casePic').lazyload({effect: 'fadeIn'});*/
 
          //加载Galleria插件  

@@ -38,13 +38,16 @@
 
 		    //Seamless scrolling
 		    seamlessRoll:function(options){
-
+		    	var slideRightScroll;
+		    	var slideLeftScroll;
 				$('ul',this).append($('ul li',this).clone());
 	            var scrollWidth=this.width();  //总共包裹的slide宽度
 	            var scrollLiWidth=$('ul li',this).outerWidth(true);  
 	            var scrollLiLength=$('ul li',this).length;  
 	            var scrollObj=$('ul',this);
+	            $this=this;
 	            var scrollTotleWidth=scrollLiLength*scrollLiWidth;
+	            var scrollBtn=true;   //screollBtn判断向左还是向右 true：右 false：左
 	            $('ul',this).css('width',scrollTotleWidth);
 
 	            var defaults = {
@@ -59,29 +62,78 @@
 
 	            var options = $.extend(defaults, options);
 
-	            function slideAuto(){
-	        		if(scrollObj.css('left').replace('px','')<=-(scrollTotleWidth/2)){
-	        			console.log('a');
-	            		scrollObj.css({
-		            		'left':'0'
-		            	})
-	            	}else{
-	            		scrollObj.animate({
-		            		'left':'-='+options.scrollDistance+'px'
-		            	},options.animateTime)
-	            	}
-	        		
+	            function slideRight(){
+	            	scrollObj.animate({
+	            		'left':'-='+options.scrollDistance+'px'
+	            	},options.animateTime,function(){
+	            		if(scrollObj.css('left').replace('px','')<=-(scrollTotleWidth/2)){
+	            			scrollObj.css({
+			            		'left':'0'
+			            	})
+	            		}
+	            	})
 	            }
 
-	            slideAuto();
+	            function slideLeft(){
+	            	scrollObj.animate({
+	            		'left':'+='+options.scrollDistance+'px'
+	            	},options.animateTime,function(){
+	            		if(scrollObj.css('left').replace('px','')>=0){
+	            			scrollObj.css({
+			            		'left':-scrollTotleWidth/2+'px'
+			            	})
+	            		}
+	            	})
+	            }
+
+	            $('.next',$this).on('click',function(){
+	            	scrollBtn=true;
+	            	clearInterval(slideRightScroll);
+	            	clearInterval(slideLeftScroll);
+	            	scrollObj.stop(true,true);
+
+	            	slideRight();
+
+	            	slideRightScroll=setInterval(slideRight,options.scrollDelay);
+	            })
+
+	            $('.prev',$this).on('click',function(){
+	            	scrollBtn=false;
+	            	clearInterval(slideRightScroll);
+	            	clearInterval(slideLeftScroll);
+	            	scrollObj.stop(true,true);
+
+	            	scrollObj.animate({
+	            		'left':'+='+options.scrollDistance+'px'
+	            	},options.animateTime,function(){
+	            		if(scrollObj.css('left').replace('px','')>0){
+	            			return false;
+	            		}
+	            	})
+	            	slideLeftScroll=setInterval(slideLeft,options.scrollDelay);
+	            })
+	            
 	           
 	            if(scrollLiLength>options.minLength){
-	            	var slideScroll=setInterval(slideAuto,options.scrollDelay);
+	            	if(scrollBtn){
+		            		slideRightScroll=setInterval(slideRight,options.scrollDelay);
+		            	}else{
+		            		slideLeftScroll=setInterval(slideLeft,options.scrollDelay)
+		            	}
 	            	scrollObj.hover(function(){
-		            	clearInterval(slideScroll);
+		            	clearInterval(slideRightScroll);
+		            	clearInterval(slideLeftScroll);
+		            	scrollObj.stop(true,true);  //***
 		            },function(){
-		            	clearInterval(slideScroll);
-		            	slideScroll=setInterval(slideAuto,options.scrollDelay);
+		            	clearInterval(slideRightScroll);
+		            	clearInterval(slideLeftScroll);
+		            	if(scrollBtn){
+		            		
+		            		slideRightScroll=setInterval(slideRight,options.scrollDelay);
+		            	}else{
+		            		slideLeftScroll=setInterval(slideLeft,options.scrollDelay)
+		            	}
+		            	
 		            })
 				}
 

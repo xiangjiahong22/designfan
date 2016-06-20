@@ -109,7 +109,7 @@
 
   <div class="designFilter">
     <div class="styled-select minSelect">
-      <select>
+      <select id="mySelect">
         <option>设计师标签</option>
         <option>武汉大咖</option>
         <option>国际大师</option>
@@ -137,6 +137,13 @@
         <option>5年以上</option>
       </select>
     </div>
+    <span class="searchCondition">
+      搜索条件：
+      <span class="filterIndex1"></span>
+      <span class="filterIndex2"></span>
+      <span class="filterIndex3"></span>
+    </span>
+
   </div>
 
 
@@ -544,8 +551,8 @@
     </div>
   </div>
 
-  <div class="ads adBorder noMarginSides">
-    <a title="寻找真正的大咖" href="#"><img alt="寻找真正的大咖" data-original="img/ads2.jpg" class="adLazy"></a>
+ <div class="fullAds adBorder noMargin">
+    <a title="行走的艺术" href="#"><img alt="行走的艺术" src="img/ads2.jpg"></a>
   </div>
 
 
@@ -643,8 +650,20 @@
       $().ready(function(){
         $(".dynamicWrap").designDynamic(2500);
 
-        $("img.adLazy").lazyload({effect: "fadeIn"});
         $("img.masterLazy").lazyload({effect: "fadeIn"});
+
+        $('.designFilter .styled-select select').on('change',function(){
+          var _thisIndex=$(this).parent('.styled-select').index();
+          var optionText=$(this).val();
+          var optionIndex=$('option:selected', $(this)).index();
+          
+          if(optionIndex!=0){
+            $('.designFilter .searchCondition span').eq(_thisIndex).html(optionText);
+          }else{
+            $('.designFilter .searchCondition span').eq(_thisIndex).html('');
+          }
+
+        })
 
 
       })

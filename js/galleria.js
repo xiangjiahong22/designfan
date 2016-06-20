@@ -5,7 +5,7 @@
  * Copyright (c) 2010, Aino
  * Licensed under the MIT license.
  */
- /* 代码整理：懒人之家 lanrenzhijia.com */
+
 (function() {
 
 var initializing = false,
